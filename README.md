@@ -3,5 +3,5 @@
 <p>moving next in this repo we will learn the defensive security and offensive security using most valuble tools.</p>
 
 
-| Sr | Tool name | language | file |
-|----|-----------|---------|------|
+| Sr | Tool name | defensive/offensive | language | file |
+|----|-----------|---------------------|----------|------|
