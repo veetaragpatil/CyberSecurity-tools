@@ -5,4 +5,4 @@
 
 | Sr | Tool name | defensive/offensive | language | file |
 |----|-----------|---------------------|----------|------|
-| 1  | CSS       | offensive           | python   |      |
+| 1  | XSS       | offensive           | python   |      |
