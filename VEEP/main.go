@@ -17,6 +17,27 @@ type Tool struct {
 }
 
 // Available tools in our CLI
+var tools = map[string]Tool{
+	"subfinder": {
+		Name:        "subfinder",
+		Description: "Find subdomains using various sources",
+		Command:     "subfinder",
+		Args:        []string{},
+	},
+	"nmap": {
+		Name:        "nmap",
+		Description: "Network scanning and discovery",
+		Command:     "nmap",
+		Args:        []string{},
+	},
+	"amass": {
+		Name:        "amass",
+		Description: "In-depth attack surface mapping and asset discovery",
+		Command:     "amass",
+		Args:        []string{},
+	},
+}
+
 
 
 func main() {
