@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// Tool represents a security tool that can be executed
+
 type Tool struct {
 	Name        string
 	Description string
