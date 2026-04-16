@@ -64,7 +64,21 @@ def parse_arp_output(output):
             ip_mac[ip] = mac
     return ip_mac
 
+def get_arp_table():
+    try:
+        if sys.platform.startswith('win'):
+            proc = subprocess.run(['arp', '-a'], capture_output=True, text=True, check=True)
+            out = proc.stdout
+        else:
+            proc = subprocess.run(['arp', '-a'], capture_output=True, text=True, check=True)
+            out = proc.stdout
+    except Exception as e:
+        print(f"Error running arp: {e}")
+        return {}
+    return parse_arp_output(out)
 
+def pretty_mac(mac):
+    return mac.upper()
 
 def main():
     print("Starting ARP watcher (safe, read-only). Press Ctrl-C to stop.")
